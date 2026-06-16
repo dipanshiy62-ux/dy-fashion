@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Best Makeup Products Under ₹300 on Amazon India — DY Fashion</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --blush:  #F2CBBF;
+      --rose:   #C9716A;
+      --mocha:  #2E1A18;
+      --ivory:  #FAF6F1;
+      --sand:   #E8DDD3;
+      --gold:   #BFA37A;
+      --text:   #3A2520;
+      --muted:  #9B8480;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--ivory);
+      color: var(--text);
+      line-height: 1.8;
+    }
+
+    /* NAV */
+    nav {
+      background: var(--mocha);
+      padding: 18px 48px;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem; font-weight: 300;
+      color: var(--blush); text-decoration: none;
+    }
+    .nav-logo span { color: var(--rose); font-style: italic; }
+    .nav-back {
+      color: var(--blush); text-decoration: none;
+      font-size: 0.82rem; letter-spacing: 0.1em; text-transform: uppercase;
+    }
+    .nav-back:hover { color: var(--rose); }
+
+    /* HERO */
+    .blog-hero {
+      background: linear-gradient(135deg, #C9716A, #e8a898);
+      padding: 80px 48px; text-align: center;
+    }
+    .blog-hero .eyebrow {
+      font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase;
+      color: rgba(255,255,255,0.75); margin-bottom: 16px;
+    }
+    .blog-hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      font-weight: 300; color: white; line-height: 1.1;
+      max-width: 800px; margin: 0 auto 20px;
+    }
+    .blog-hero h1 em { font-style: italic; color: var(--blush); }
+    .blog-hero .meta {
+      font-size: 0.82rem; color: rgba(255,255,255,0.7);
+      letter-spacing: 0.08em;
+    }
+
+    /* CONTENT */
+    .blog-content {
+      max-width: 780px; margin: 0 auto;
+      padding: 60px 24px 80px;
+    }
+
+    .intro {
+      font-size: 1.15rem; color: var(--muted);
+      line-height: 1.9; margin-bottom: 48px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid var(--sand);
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 20px;
+      padding: 36px;
+      margin-bottom: 28px;
+      box-shadow: 0 2px 16px rgba(46,26,24,0.07);
+      border-left: 4px solid var(--rose);
+      display: flex; gap: 24px; align-items: flex-start;
+    }
+    .product-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3rem; color: var(--blush);
+      font-weight: 300; line-height: 1;
+      flex-shrink: 0; width: 60px;
+    }
+    .product-body { flex: 1; }
+    .product-tag {
+      display: inline-block;
+      font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--rose); background: #fce8e0;
+      padding: 3px 10px; border-radius: 50px; margin-bottom: 10px;
+    }
+    .product-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem; color: var(--mocha);
+      font-weight: 400; margin-bottom: 8px;
+    }
+    .product-price {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem; color: var(--rose);
+      font-weight: 600; margin-bottom: 12px;
+    }
+    .product-desc {
+      font-size: 0.92rem; color: var(--text);
+      line-height: 1.75; margin-bottom: 16px;
+    }
+    .product-why {
+      background: linear-gradient(135deg, #fce8e0, #f2cbbf);
+      border-radius: 12px; padding: 14px 18px;
+      font-size: 0.85rem; color: var(--mocha);
+    }
+    .product-why strong { display: block; margin-bottom: 4px; color: var(--rose); }
+    .shop-btn {
+      display: inline-block; margin-top: 14px;
+      background: var(--mocha); color: white;
+      padding: 10px 24px; border-radius: 50px;
+      font-size: 0.78rem; letter-spacing: 0.1em;
+      text-transform: uppercase; text-decoration: none;
+      transition: background 0.2s;
+    }
+    .shop-btn:hover { background: var(--rose); }
+
+    /* TIPS BOX */
+    .tips-box {
+      background: var(--mocha);
+      border-radius: 20px; padding: 40px;
+      margin: 48px 0; color: var(--blush);
+    }
+    .tips-box h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem; font-weight: 300;
+      color: white; margin-bottom: 24px;
+    }
+    .tips-box h2 em { color: var(--rose); font-style: italic; }
+    .tips-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    .tips-list li {
+      font-size: 0.92rem; color: #c9a09a;
+      display: flex; align-items: flex-start; gap: 10px;
+    }
+    .tips-list li span { color: var(--rose); }
+
+    /* CTA */
+    .cta-section {
+      background: linear-gradient(135deg, var(--blush), var(--sand));
+      border-radius: 20px; padding: 40px;
+      text-align: center; margin-top: 48px;
+    }
+    .cta-section h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem; color: var(--mocha);
+      font-weight: 400; margin-bottom: 12px;
+    }
+    .cta-section p {
+      font-size: 0.92rem; color: var(--muted);
+      margin-bottom: 24px;
+    }
+    .cta-btn {
+      background: var(--rose); color: white;
+      padding: 14px 36px; border-radius: 50px;
+      font-size: 0.85rem; letter-spacing: 0.1em;
+      text-transform: uppercase; text-decoration: none;
+      font-weight: 500; display: inline-block;
+      transition: background 0.2s;
+    }
+    .cta-btn:hover { background: var(--mocha); }
+
+    /* FOOTER */
+    footer {
+      background: var(--mocha); text-align: center;
+      padding: 32px; color: #7a6460; font-size: 0.82rem;
+    }
+    footer a { color: var(--blush); text-decoration: none; }
+
+    @media (max-width: 600px) {
+      nav { padding: 16px 24px; }
+      .blog-hero { padding: 60px 24px; }
+      .product-card { flex-direction: column; padding: 24px; }
+      .tips-box { padding: 28px; }
+      .cta-section { padding: 28px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">DY<span> Fashion</span></a>
+  <a href="index.html" class="nav-back">← Back to Home</a>
+</nav>
+
+<!-- HERO -->
+<div class="blog-hero">
+  <p class="eyebrow">✦ Makeup Guide by Dipanshi Yadav</p>
+  <h1>Best Makeup Products <em>Under ₹300</em> on Amazon India 2025</h1>
+  <p class="meta">By Dipanshi Yadav &nbsp;·&nbsp; June 2025 &nbsp;·&nbsp; 7 min read</p>
+</div>
+
+<!-- CONTENT -->
+<div class="blog-content">
+
+  <p class="intro">
+    Who says you need to spend thousands to look gorgeous? As a beauty blogger and Pinterest creator, I have tested hundreds of makeup products and found some absolute gems that cost less than ₹300! These are my honest, tried and tested picks that I personally recommend to everyone. All available on Amazon India with fast delivery! 💄✨
+  </p>
+
+  <!-- PRODUCT 1 -->
+  <div class="product-card">
+    <div class="product-number">01</div>
+    <div class="product-body">
+      <span class="product-tag">Concealer</span>
+      <div class="product-name">MARS Cancel Concealer SPF50</div>
+      <div class="product-price">₹199</div>
+      <p class="product-desc">
+        This is hands down the best affordable concealer I have ever tried! The MARS Cancel Concealer gives full coverage, has SPF50+ protection and lasts all day without creasing. It can be used as a concealer, contour and highlighter — three products in one for just ₹199! The lightweight formula blends beautifully and gives a natural finish that looks amazing in photos too!
+      </p>
+      <div class="product-why">
+        <strong>✨ Why I Love It:</strong>
+        Full coverage, SPF50 protection, crease resistant, natural finish and multi use! Perfect for everyday wear!
+      </div>
+      <a href="https://amzn.to/4xsO25R" target="_blank" class="shop-btn">Shop on Amazon →</a>
+    </div>
+  </div>
+
+  <!-- PRODUCT 2 -->
+  <div class="product-card">
+    <div class="product-number">02</div>
+    <div class="product-body">
+      <span class="product-tag">Lip Care</span>
+      <div class="product-name">Nivea Cherry Shine Lip Balm</div>
+      <div class="product-price">₹141</div>
+      <p class="product-desc">
+        Every makeup look starts with soft, moisturised lips and this Nivea Cherry Shine Lip Balm is my absolute daily essential! It gives the most beautiful natural cherry shine and keeps lips soft and hydrated all day long. The cherry scent is absolutely gorgeous and it is so affordable at just ₹141! I always have this in my bag — it is the one product I can never live without!
+      </p>
+      <div class="product-why">
+        <strong>✨ Why I Love It:</strong>
+        Beautiful cherry shine, all day hydration, gorgeous scent and super affordable! A must have for every girl!
+      </div>
+      <a href="https://amzn.to/4uHWgVk" target="_blank" class="shop-btn">Shop on Amazon →</a>
+    </div>
+  </div>
+
+  <!-- PRODUCT 3 -->
+  <div class="product-card">
+    <div class="product-number">03</div>
+    <div class="product-body">
+      <span class="product-tag">Skincare + Makeup</span>
+      <div class="product-name">Minimalist 10% Vitamin C Serum</div>
+      <div class="product-price">₹284</div>
+      <p class="product-desc">
+        Okay so this is technically a skincare product but it is the secret weapon behind every great makeup look! When your skin glows naturally you need less makeup! The Minimalist Vitamin C Serum brightens skin, treats dark spots and gives you that beautiful natural glow that makes all your makeup look ten times better! Use it every morning before your makeup routine for the most radiant skin!
+      </p>
+      <div class="product-why">
+        <strong>✨ Why I Love It:</strong>
+        Brightens skin, treats dark spots and gives natural glow that makes all makeup look stunning!
+      </div>
+      <a href="https://amzn.to/49Yj2k9" target="_blank" class="shop-btn">Shop on Amazon →</a>
+    </div>
+  </div>
+
+  <!-- PRODUCT 4 -->
+  <div class="product-card">
+    <div class="product-number">04</div>
+    <div class="product-body">
+      <span class="product-tag">Skincare</span>
+      <div class="product-name">Cetaphil Gentle Skin Cleanser</div>
+      <div class="product-price">₹348</div>
+      <p class="product-desc">
+        Before any makeup application your skin needs to be clean and prepped! The Cetaphil Gentle Skin Cleanser is my go to face wash that removes all dirt and impurities without drying out my skin. When your skin is clean and hydrated your makeup applies so much more smoothly and lasts longer too! This dermatologist recommended cleanser is worth every rupee!
+      </p>
+      <div class="product-why">
+        <strong>✨ Why I Love It:</strong>
+        Gentle on skin, removes all impurities and preps skin perfectly for makeup application!
+      </div>
+      <a href="https://amzn.to/4upeEC1" target="_blank" class="shop-btn">Shop on Amazon →</a>
+    </div>
+  </div>
+
+  <!-- TIPS BOX -->
+  <div class="tips-box">
+    <h2>My Top Tips for <em>Budget Makeup</em></h2>
+    <ul class="tips-list">
+      <li><span>✦</span> Always prep your skin with a good cleanser and moisturiser before makeup</li>
+      <li><span>✦</span> Invest in a good concealer — it replaces foundation, contour and highlight</li>
+      <li><span>✦</span> Keep lips moisturised with lip balm before applying any lip colour</li>
+      <li><span>✦</span> Use Vitamin C serum daily for natural glow that reduces makeup needed</li>
+      <li><span>✦</span> Shop on Amazon India for the best prices and fast delivery</li>
+      <li><span>✦</span> Check my DY Fashion website for weekly updated affordable picks!</li>
+    </ul>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <h3>Shop All My Picks 💄</h3>
+    <p>Check out all my hand-picked beauty and makeup finds on Amazon India — updated every week just for you!</p>
+    <a href="index.html" class="cta-btn">Shop the Edit →</a>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 DY Fashion by Dipanshi Yadav &nbsp;·&nbsp; <a href="index.html">Back to Home</a></p>
+  <p style="margin-top:8px; font-size:0.75rem;">Affiliate Disclosure: Some links are affiliate links. I may earn a small commission at no extra cost to you.</p>
+</footer>
+
+</body>
+</html>
